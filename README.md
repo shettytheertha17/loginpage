@@ -1,2 +1,2 @@
-# loginpagewithphp
-Consists of php code to store the input data
+# loginpageusingjavascript
+https://shettytheertha17.github.io/loginpage/login.html
