@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOGIN Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script><script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  input:focus, textarea:focus, select:focus{
+      outline: none;}
+</style>
+
+<script type="text/javascript">
+function matchpass(){
+var firstpassword=document.f1.password.value;
+var secondpassword=document.f1.password2.value;
+
+if(firstpassword==secondpassword){
+return true;
+}
+else{
+alert("password must be same!");
+return false;
+}
+}
+</script>
+<style>
+.button {
+  background-color:  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;width:100%;
+}
+.fa {
+  padding: 8px;
+  font-size: 30px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+</style>
+</head>
+<body style="background-image: linear-gradient(to right, lightblue, blue, purple,hotpink);">
+
+
+  <form  name="f1" action="change.php" onsubmit = "return validate()"  method="POST" style="background-color:white;width:750px;border:1px solid black;border-radius:16px;margin-left:300px;margin-top:50px;">
+
+  <h1 style="text-align:center;color:black;padding:20px 50px">LOGIN</h1>
+
+  <div class="row" style="background-color:white;margin:50px">
+<div class="col-sm-12">
+  <div class="row" style='border-bottom:1px ridge grey'><div class="col-sm-1"><label>Username</label><br>
+<i class="far fa-user" style='font-size:25px;color:grey;padding:8px;'></i></div><div class="col-sm-9">
+  <input type="text" id="uname" name="uname" placeholder="Type your username" style="border:none;margin-top:38px;" autofocus required></input></div></div>
+
+</div></div>
+<div class="row" style="background-color:white;margin:50px">
+<div class="col-sm-12">
+<div class="row" style='border-bottom:1px ridge grey'><div class="col-sm-1"><label>Password</label><br>
+<i class="fa fa-lock" style='font-size:25px;color:grey;padding:8px;'></i></div><div class="col-sm-9">
+<input type="text" id="lpassword" name="lpassword" placeholder="Type your Password" style="border:none;margin-top:38px;" autofocus required></input>
+</div></div>
+
+</div>     <div class="row"><a href="changepa.html"><p style="float:right;color:black">Forgot Password?</p></a>
+
+
+<div class="col-sm-12"><br>
+ 
+</div></div>
+<br>
+<button type="submit" class="btn btn-warning" style="border:3px solid white;border-radius:8px;width:47%;color:white;background-image: linear-gradient(to right, lightblue, blue, purple,hotpink);">Login</button>&nbsp;&nbsp;&nbsp;
+	
+<a href="aptreg.html"style="border:3px solid white;margin-left:90px;border-radius:8px;color:navy;background-image: linear-gradient(to right, lightblue, #blue, purple,hotpink);">Sign in</a>
+</form>
+
+</body>
+</html>
